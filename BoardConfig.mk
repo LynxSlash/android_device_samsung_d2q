@@ -80,7 +80,6 @@ BOARD_CUSTOM_BOOTIMG_MK := device/samsung/d2q/bootimg.mk
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_USERIMAGES_USE_EXT4 := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
