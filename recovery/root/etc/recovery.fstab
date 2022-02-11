@@ -40,10 +40,10 @@
 /dev/block/bootdevice/by-name/system	/		ext4	ro			recoveryonly
 /dev/block/bootdevice/by-name/userdata	/data		f2fs	defaults		wait,encryptable=footer,length=-16384
 /dev/block/bootdevice/by-name/cache	/cache		ext4	defaults		recoveryonly
-/dev/block/mmcblk0p1			/sdcard		sdfat	defaults		recoveryonly
-/dev/block/bootdevice/by-name/sec_efs	/efs		ext4	defaults		recoveryonly
+#/dev/block/mmcblk0p1			/sdcard		sdfat	defaults		recoveryonly
+/dev/block/bootdevice/by-name/efs	/efs		ext4	defaults		recoveryonly
 /dev/block/bootdevice/by-name/sec_efs	/sec_efs	ext4	defaults		recoveryonly
-/dev/block/bootdevice/by-name/carrier	/carrier	ext4	defaults		recoveryonly
+#/dev/block/bootdevice/by-name/carrier	/carrier	ext4	defaults		recoveryonly
 
 # FOTA
 /dev/block/bootdevice/by-name/apnhlos	/modem		emmc	defaults		recoveryonly
@@ -56,8 +56,8 @@
 /dev/block/bootdevice/by-name/misc	/misc		emmc	defaults		recoveryonly
 
 # Samsung ODE
-/dev/block/bootdevice/by-name/keydata	/keydata	ext4	defaults		recoveryonly
-/dev/block/bootdevice/by-name/keyrefuge	/keyrefuge	ext4	defaults		recoveryonly
+#/dev/block/bootdevice/by-name/keydata	/keydata	ext4	defaults		recoveryonly
+#/dev/block/bootdevice/by-name/keyrefuge	/keyrefuge	ext4	defaults		recoveryonly
 
 #Auto-generated code by FOTA Portal
 /dev/block/bootdevice/by-name/dtbo	/dtbo		emmc	defaults		recoveryonly
